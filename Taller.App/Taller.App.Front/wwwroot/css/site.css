@@ -1,0 +1,47 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.class-icon-add {
+  color: #5196fb;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.class-icon-edi {
+  color: #5196fb;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.class-icon-del {
+  color: #ff83c8;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.class-contain-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}

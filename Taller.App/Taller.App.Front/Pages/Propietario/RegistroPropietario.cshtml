@@ -1,0 +1,52 @@
+﻿@page
+@model Taller.App.Front.Pages.RegistroPropietarioModel
+@{
+}
+
+
+<form action="">
+
+    <h3>Datos propietario</h3>
+
+    <div class="d-flex flex-row mb-3">
+        <div class="mb-3 me-3">
+            <label for="exampleFormControlInput1" class="form-label">Cédula</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3 me-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3">
+        </div>
+
+        <div class="dropdown">
+            <label for="exampleFormControlInput1" class="form-label">Ciudad</label>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione</option>
+                @foreach (string item in Model.ciudades)
+                {
+                    <option value="3">@item</option>
+                }
+            </select>
+        </div>
+    </div>
+
+
+
+
+    <hr class="border border-primary border-3 opacity-75">
+
+    <h3>Datos Vehículo</h3>
+
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Placa</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Modelo</label>
+        <input type="number" class="form-control" id="exampleFormControlTextarea1" rows="3">
+    </div>
+
+
+</form>
